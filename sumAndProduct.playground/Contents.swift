@@ -5,8 +5,8 @@ func sumAndProduct(_ sum: UInt, _ product: UInt) -> [UInt] {
     var x: UInt
     var y: UInt
     
-    for number: UInt in 1...999999999999999 {
-        for secondNumber: UInt in 1...999999999999999 {
+    for number: UInt in 1...999 {
+        for secondNumber: UInt in 1...999 {
             
             if number + secondNumber == sum && number * secondNumber == product {
                 x = number
@@ -19,4 +19,4 @@ func sumAndProduct(_ sum: UInt, _ product: UInt) -> [UInt] {
 }
     
 
-sumAndProduct(6, 9)
+sumAndProduct(4, 4)
